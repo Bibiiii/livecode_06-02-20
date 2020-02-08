@@ -1,0 +1,51 @@
+/* Sidebar styles */
+.sidebar {
+  flex-basis: 35%;
+  background-color: white;
+  border-radius: 5%;
+  padding: 40px 24px;
+  box-shadow: 3px 3px 20px rgba(1, 1, 1, 0.05);
+  position: relative;
+}
+
+.sidebar .sidebar-title h3 {
+  font-weight: normal;
+  margin-left: 16px;
+}
+
+.sidebar-section h4 {
+  opacity: 0.3;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
+.sidebar-section ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sidebar-section ul li {
+  display: flex;
+  border-radius: 10px;
+  margin: 12px auto;
+  padding: 8px;
+
+  transition: background-color .5s;
+}
+
+.sidebar-section ul li:hover {
+  background-color: rgba(150, 150, 150, 0.1);
+}
+
+.sidebar-section ul li img {
+  margin-right: 16px;
+}
+
+.sidebar .btn-large {
+  position: absolute;
+  /* hacky way to make button centered: 50% - buttonWidth/2 */
+  left: calc(50% - (227px / 2));
+}

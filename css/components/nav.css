@@ -1,0 +1,74 @@
+/* NAV CONTAINER */
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding: 16px 32px;
+  align-items: center;
+  background: white;
+}
+
+/* Divs immediately inside nav */
+nav > div,
+nav > ul {
+  flex-basis: 25%;
+  height: 100%;
+}
+
+/* Logo */
+nav .logo {
+  height: 50px;
+  width: auto;
+}
+
+/* Menu list */
+nav > ul {
+  height: 100%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+nav > ul > li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+	position: relative;
+	letter-spacing: 0.05rem;
+	cursor: pointer;
+}
+
+/* all list items that are not active */
+nav > ul > li:not(.active) {
+  opacity: 0.5;
+}
+
+/* orange bar for 'active' items */
+nav > ul > li.active:after {
+  content: "";
+  position: absolute;
+  bottom: -16px;
+  width: 100%;
+  height: 4px;
+  background: #ff9a15;
+  left: 0;
+  display: block;
+  margin: auto;
+  border-radius: 4px;
+}
+
+
+/* Account actions */
+nav .account-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+nav .account-actions .btn-icon {
+  padding-right: 20px;
+}

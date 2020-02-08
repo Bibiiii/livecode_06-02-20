@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1500px;
+  box-sizing: border-box;
+  padding: 32px;
+}
+
+
+@media (min-width: 700px) and (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}

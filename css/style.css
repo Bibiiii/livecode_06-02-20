@@ -1,0 +1,66 @@
+/* --- Google Fonts --- */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700");
+
+@import url("components/container.css");
+@import url("components/nav.css");
+@import url("components/avatar.css");
+@import url("components/button.css");
+@import url("components/sidebar.css");
+@import url("components/cards.css");
+
+/* --- Fonts --- */
+body {
+  font-family: "Open Sans", "Helvetica", "sans-serif";
+  padding-bottom: 200px;
+  margin: 0;
+  background: #f4f4f4;
+}
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", "sans-serif";
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.container {
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
+}
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0;
+}
+.list-inline li {
+  display: inline-block;
+}
+
+/* CUSTOM STYLES */
+.flexbox {
+  display: flex;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+h2 {
+  font-size: 2rem;
+  letter-spacing: 0.05rem;
+}
+
+input[type="checkbox"] {
+  /* make checkboxes bigger */
+  transform: scale(2);
+  margin: 12px 24px;
+}

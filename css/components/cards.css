@@ -1,0 +1,65 @@
+/* Cards styles */
+.card-container {
+  flex-grow: 1;
+  padding-left: 32px;
+}
+
+.card-container .filters,
+.card {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 1fr 1fr 1fr 0.75fr;
+  padding: 16px;
+}
+
+.filters .btn-text i {
+  color: #a7a7a7;
+  margin-left: 5px;
+}
+
+.filters .btn-text.active i {
+  color: #ffa3b7;
+  transform: rotate(180deg);
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.card h3,
+.card p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.card h3 {
+  margin-bottom: 5px;
+}
+
+.card .card-info .salary h3 {
+  display: inline-block;
+}
+
+.card .card-badge {
+  background-color: #c9df58;
+  color: white;
+  font-size: 0.7rem;
+  padding: 3px 6px;
+  border-radius: 20px;
+}
+
+.card .card-info .btn-icon {
+  border-radius: 0;
+  padding: 6px 0;
+}
+
+.card .card-info .btn-icon:first-child {
+  border-right: 1px solid lightgrey;
+  padding-right: 12px;
+}
+
+.card .card-info .btn-icon:last-child {
+  padding-left: 12px;
+}
